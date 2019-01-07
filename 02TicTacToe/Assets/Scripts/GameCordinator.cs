@@ -9,7 +9,6 @@
  * 
  * Bugs:
  * 
- * If the AI runs into a tie it does not make a final move because the ai runs after the win condition. This results in the player who moves first not flipping in this situation.
  * 
  */
 
@@ -38,7 +37,7 @@ public class GameCordinator : MonoBehaviour {
     public Text PlayerTwoScoreText;
     public Text TiedGamesText;
 
-    public int[] gameBoard = new int[] { 0,0,0,0,0,0,0,0,0 };
+    public int[] gameBoard = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
     private int moveCount = 0;
     public int[] moveList = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
@@ -139,7 +138,10 @@ public class GameCordinator : MonoBehaviour {
                                     }
                                     if (moveList[6] == 7 || moveList[6] == 9)
                                     {
-                                        StartCoroutine(AISendMessage(six));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }                                        
                                     }
                                 }
                             }
@@ -170,11 +172,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 6 || moveList[6] == 9)
                                     {
-                                        StartCoroutine(AISendMessage(eight));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
                                     }
                                     if (moveList[6] == 8)
                                     {
-                                        StartCoroutine(AISendMessage(six));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
                                     }
                                 }
                             }
@@ -198,11 +206,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 4 || moveList[6] == 9)
                                     {
-                                        StartCoroutine(AISendMessage(seven));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
                                     }
                                     if (moveList[6] == 7)
                                     {
-                                        StartCoroutine(AISendMessage(four));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
                                     }
                                 }
                             }
@@ -232,11 +246,17 @@ public class GameCordinator : MonoBehaviour {
                                 }
                                 if (moveList[6] == 3 || moveList[6] == 9)
                                 {
-                                    StartCoroutine(AISendMessage(eight));
+                                    if (moveCount == 7)
+                                    {
+                                        StartCoroutine(AISendMessage(eight));
+                                    }
                                 }
                                 if (moveList[6] == 8)
                                 {
-                                    StartCoroutine(AISendMessage(nine));
+                                    if (moveCount == 7)
+                                    {
+                                        StartCoroutine(AISendMessage(nine));
+                                    }
                                 }
                             }
                         }
@@ -263,11 +283,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 2 || moveList[6] == 9)
                                     {
-                                        StartCoroutine(AISendMessage(three));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
                                     }
                                     if (moveList[6] == 3)
                                     {
-                                        StartCoroutine(AISendMessage(two));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
                                     }
                                 }
                             }
@@ -293,11 +319,17 @@ public class GameCordinator : MonoBehaviour {
                                 }
                                 if (moveList[6] == 3)
                                 {
-                                    StartCoroutine(AISendMessage(six));
+                                    if (moveCount == 7)
+                                    {
+                                        StartCoroutine(AISendMessage(six));
+                                    }                                    
                                 }
                                 if (moveList[6] == 4 || moveList[6] == 6)
                                 {
-                                    StartCoroutine(AISendMessage(three));
+                                    if (moveCount == 7)
+                                    {
+                                        StartCoroutine(AISendMessage(three));
+                                    }
                                 }
                             }
                         }
@@ -334,11 +366,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 6)
                                     {
-                                        StartCoroutine(AISendMessage(eight));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
                                     }
                                     if (moveList[6] == 8 || moveList[6] == 9)
                                     {
-                                        StartCoroutine(AISendMessage(nine));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(nine));
+                                        }
                                     }
                                 }
                             }
@@ -366,11 +404,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 4)
                                     {
-                                        StartCoroutine(AISendMessage(seven));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
                                     }
                                     if (moveList[6] == 7 || moveList[6] == 8)
                                     {
-                                        StartCoroutine(AISendMessage(four));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
                                     }
                                 }
                             }
@@ -398,11 +442,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 6 || moveList[6] == 8)
                                     {
-                                        StartCoroutine(AISendMessage(nine));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(nine));
+                                        }
                                     }
                                     if (moveList[6] == 9)
                                     {
-                                        StartCoroutine(AISendMessage(eight));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
                                     }
                                 }
                             }
@@ -430,11 +480,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 4 || moveList[6] == 8)
                                     {
-                                        StartCoroutine(AISendMessage(seven));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
                                     }
                                     if (moveList[6] == 7)
                                     {
-                                        StartCoroutine(AISendMessage(eight));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
                                     }
                                 }
                             }
@@ -462,11 +518,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 6 || moveList[6] == 8)
                                     {
-                                        StartCoroutine(AISendMessage(nine));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(nine));
+                                        }
                                     }
                                     if (moveList[6] == 9)
                                     {
-                                        StartCoroutine(AISendMessage(eight));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
                                     }
                                 }
                             }
@@ -494,11 +556,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 3)
                                     {
-                                        StartCoroutine(AISendMessage(four));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
                                     }
                                     if (moveList[6] == 4 || moveList[6] == 6)
                                     {
-                                        StartCoroutine(AISendMessage(three));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
                                     }
                                 }
                             }
@@ -526,11 +594,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 1 || moveList[6] == 8)
                                     {
-                                        StartCoroutine(AISendMessage(seven));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
                                     }
                                     if (moveList[6] == 7)
                                     {
-                                        StartCoroutine(AISendMessage(eight));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
                                     }
                                 }
                             }
@@ -568,11 +642,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 6)
                                     {
-                                        StartCoroutine(AISendMessage(nine));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(nine));
+                                        }
                                     }
                                     if (moveList[6] == 7 || moveList[6] == 9)
                                     {
-                                        StartCoroutine(AISendMessage(six));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
                                     }
                                 }
                             }
@@ -600,11 +680,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 4)
                                     {
-                                        StartCoroutine(AISendMessage(seven));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
                                     }
                                     if (moveList[6] == 7 || moveList[6] == 8)
                                     {
-                                        StartCoroutine(AISendMessage(four));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
                                     }
                                 }
                             }
@@ -632,11 +718,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 6 || moveList[6] == 7)
                                     {
-                                        StartCoroutine(AISendMessage(nine));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(nine));
+                                        }
                                     }
                                     if (moveList[6] == 9)
                                     {
-                                        StartCoroutine(AISendMessage(six));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
                                     }
                                 }
                             }
@@ -660,11 +752,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 4 || moveList[6] == 7)
                                     {
-                                        StartCoroutine(AISendMessage(eight));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
                                     }
                                     if (moveList[6] == 8)
                                     {
-                                        StartCoroutine(AISendMessage(four));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
                                     }
                                 }
                             }
@@ -696,11 +794,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 1)
                                     {
-                                        StartCoroutine(AISendMessage(four));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
                                     }
                                     if (moveList[6] == 4 || moveList[6] == 6)
                                     {
-                                        StartCoroutine(AISendMessage(one));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
                                     }
                                 }
                             }
@@ -728,11 +832,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 1)
                                     {
-                                        StartCoroutine(AISendMessage(two));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
                                     }
                                     if (moveList[6] == 2 || moveList[6] == 7)
                                     {
-                                        StartCoroutine(AISendMessage(one));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
                                     }
                                 }
                             }
@@ -760,11 +870,17 @@ public class GameCordinator : MonoBehaviour {
                                 {
                                     if (moveList[6] == 1 || moveList[6] == 1)
                                     {
-                                        StartCoroutine(AISendMessage(eight));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
                                     }
                                     if (moveList[6] == 8)
                                     {
-                                        StartCoroutine(AISendMessage(seven));
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
                                     }
                                 }
                             }
@@ -1262,8 +1378,13 @@ public class GameCordinator : MonoBehaviour {
         }
         moveCount++;
         pOneTurn = !pOneTurn;
+        if (gameOver == false && aiEnabled == true && pOneTurn == false)
+        {
+            AIMove();
+        }
         WinCheck();
         UpdateScoreboard();
+        Debug.Log(moveCount);
     }
     
     public void WinCheck()
@@ -1335,10 +1456,6 @@ public class GameCordinator : MonoBehaviour {
         if (gameOver == false && gameBoard[0] != 0 && gameBoard[1] != 0 && gameBoard[2] != 0 && gameBoard[3] != 0 && gameBoard[4] != 0 && gameBoard[5] != 0 && gameBoard[6] != 0 && gameBoard[7] != 0)
         {
             GameTied();
-        }
-        if (gameOver == false && aiEnabled == true && pOneTurn == false)
-        {
-            AIMove();
         }
     }
 
