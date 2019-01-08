@@ -3145,7 +3145,6 @@ public class GameCordinator : MonoBehaviour {
     public void CellClicked(string cell)
     {
         // Load turn into gameBoard array
-        Debug.Log("cellClicked called with " + cell);
         int tempTurn;
         if (pOneTurn == true)
         {
@@ -3208,7 +3207,6 @@ public class GameCordinator : MonoBehaviour {
         }
         WinCheck();
         UpdateScoreboard();
-        Debug.Log(moveCount);
     }
     
     public void WinCheck()
