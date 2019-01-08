@@ -904,7 +904,37 @@ public class GameCordinator : MonoBehaviour {
                         }
                         else
                         {
-
+                            if (moveList[4] == 2 || moveList[4] == 6 || moveList[4] == 8 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                            }
+                            if (moveList[4] == 3)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 6 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
+                                    }
+                                    if (moveList[6] == 8)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     if (moveList[2] == 2)
@@ -915,7 +945,40 @@ public class GameCordinator : MonoBehaviour {
                         }
                         else
                         {
-
+                            if (moveList[4] == 1 || moveList[4] == 6 || moveList[4] == 8 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                            }
+                            if (moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(one));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 6 || moveList[6] == 8)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(nine));
+                                        }
+                                    }
+                                    if (moveList[6] == 9)
+                                    {
+                                        if (moveList[6] == 9)
+                                        {
+                                            if (moveCount == 7)
+                                            {
+                                                StartCoroutine(AISendMessage(eight));
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     if (moveList[2] == 3)
@@ -926,7 +989,37 @@ public class GameCordinator : MonoBehaviour {
                         }
                         else
                         {
-
+                            if (moveList[4] == 1 || moveList[4] == 6 || moveList[4] == 7 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                            }
+                            if (moveList[4] == 2)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(one));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 6 || moveList[6] == 7)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(nine));
+                                        }
+                                    }
+                                    if (moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     if (moveList[2] == 6)
@@ -937,7 +1030,37 @@ public class GameCordinator : MonoBehaviour {
                         }
                         else
                         {
-
+                            if (moveList[4] == 2 || moveList[4] == 3 || moveList[4] == 7 || moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                            }
+                            if (moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 7 || moveList[6] == 8)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                    if (moveList[6] == 2)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     if (moveList[2] == 7)
@@ -948,7 +1071,37 @@ public class GameCordinator : MonoBehaviour {
                         }
                         else
                         {
-
+                            if (moveList[4] == 2 || moveList[4] == 3 || moveList[4] == 6 || moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                            }
+                            if (moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 3 || moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                    if (moveList[6] == 2)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     if (moveList[2] == 8)
@@ -959,7 +1112,37 @@ public class GameCordinator : MonoBehaviour {
                         }
                         else
                         {
-
+                            if (moveList[4] == 2 || moveList[4] == 3 || moveList[4] == 6 || moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                            }
+                            if (moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 2 || moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     if (moveList[2] == 9)
@@ -970,7 +1153,37 @@ public class GameCordinator : MonoBehaviour {
                         }
                         else
                         {
-
+                            if (moveList[4] == 1 || moveList[4] == 3 || moveList[4] == 6 || moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                            }
+                            if (moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 1 || moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -983,7 +1196,472 @@ public class GameCordinator : MonoBehaviour {
                 }
                 else
                 {
-
+                    if (moveList[2] == 2)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(eight));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 3)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(nine));
+                                        }
+                                    }
+                                    if (moveList[6] == 6 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                }
+                            }
+                            if (moveList[4] == 4)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(six));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                    if (moveList[6] == 7 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                }
+                            }
+                            if (moveList[4] == 6)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(four));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 7)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                    if (moveList[6] == 3 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                }
+                            }
+                            if (moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 4)
+                                    {
+                                        if (moveCount == 4)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                    if (moveList[6] == 6 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                }
+                            }
+                            if (moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(four));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 7)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                    if (moveList[6] == 3 || moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 3)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(seven));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 2 || moveList[4] == 6 || moveList[4] == 8 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(four));
+                                }
+                            }
+                            if (moveList[4] == 4)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(six));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 8 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                    if (moveList[6] == 2)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 4)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(six));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 2)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                    if (moveList[6] == 7 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                }
+                            }
+                            if (moveList[4] == 3)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
+                                    }
+                                    if (moveList[6] == 8 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                }
+                            }
+                            if (moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 2)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(nine));
+                                        }
+                                    }
+                                    if (moveList[6] == 8 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                }
+                            }
+                            if (moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 4)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                    if (moveList[6] == 7 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                }
+                            }
+                            if (moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                    if (moveList[6] == 7 || moveList[6] == 8)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 6)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(four));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 2 || moveList[4] == 3 || moveList[4] == 8 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                            }
+                            if (moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 8 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                    if (moveList[6] == 2)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 7)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(three));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 4 || moveList[4] == 6 || moveList[4] == 8 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                            }
+                            if (moveList[4] == 2)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 6 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                    if (moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six
+));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 8)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(two));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 4 || moveList[4] == 6 || moveList[4] == 7 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                            }
+                            if (moveList[4] == 3)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 6 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                    if (moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 9)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(three));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 4 || moveList[4] == 6 || moveList[4] == 7 || moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                            }
+                            if (moveList[4] == 2)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 6 || moveList[6] == 7)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                    if (moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
             if (moveList[0] == 6)
@@ -994,7 +1672,293 @@ public class GameCordinator : MonoBehaviour {
                 }
                 else
                 {
-
+                    if (moveList[2] == 1)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(eight));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 3 || moveList[4] == 4 || moveList[4] == 7 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                            }
+                            if (moveList[4] == 2)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 4 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                    if (moveList[6] == 7)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 2)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(one));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 3 || moveList[4] == 4 || moveList[4] == 7 || moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                            }
+                            if (moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 4 || moveList[6] == 8)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                    if (moveList[6] == 7)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 3)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(nine));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 2 || moveList[4] == 4 || moveList[4] == 7 || moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(one));
+                                }
+                            }
+                            if (moveList[4] == 1)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 4 || moveList[6] == 7)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
+                                    }
+                                    if (moveList[6] == 8)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 4)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(one));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 2 || moveList[4] == 3 || moveList[4] == 7 || moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                            }
+                            if (moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 7 || moveList[6] == 8)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                    if (moveList[6] == 2)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 7)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(two));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 3 || moveList[4] == 4 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                            }
+                            if (moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 3 || moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
+                                    }
+                                    if (moveList[6] == 1)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 8)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(three));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 2 || moveList[4] == 4 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                            }
+                            if (moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 2 || moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
+                                    }
+                                    if (moveList[6] == 1)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 9)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(three));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 2 || moveList[4] == 4 || moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                            }
+                            if (moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 1 || moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                    if (moveList[6] == 2)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
             if (moveList[0] == 7)
@@ -1005,7 +1969,293 @@ public class GameCordinator : MonoBehaviour {
                 }
                 else
                 {
-
+                    if (moveList[2] == 1)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(four));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 2 || moveList[4] == 3 || moveList[4] == 8 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(six));
+                                }
+                            }
+                            if (moveList[4] == 6)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 3 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
+                                    }
+                                    if (moveList[6] == 8)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(nine));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 2)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(six));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 3 || moveList[4] == 8 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(four));
+                                }
+                            }
+                            if (moveList[4] == 4)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(one));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 3 || moveList[6] == 8)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(nine));
+                                        }
+                                    }
+                                    if (moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 3)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(two));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 4 || moveList[4] == 6 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                            }
+                            if (moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 4 || moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
+                                    }
+                                    if (moveList[6] == 1)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 4)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(one));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 2 || moveList[4] == 3 || moveList[4] == 6 || moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                            }
+                            if (moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 3 || moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                    if (moveList[6] == 2)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 6)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(two));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 3 || moveList[4] == 4 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                            }
+                            if (moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 3 || moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
+                                    }
+                                    if (moveList[6] == 1)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 8)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(nine));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 2 || moveList[4] == 3 || moveList[4] == 4 || moveList[4] == 6)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(one));
+                                }
+                            }
+                            if (moveList[4] == 1)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(four));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 2 || moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                    if (moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 9)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(eight));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 3 || moveList[4] == 4 || moveList[4] == 6)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                            }
+                            if (moveList[4] == 2)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(four));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 1 || moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                    if (moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
             if (moveList[0] == 8)
@@ -1016,7 +2266,293 @@ public class GameCordinator : MonoBehaviour {
                 }
                 else
                 {
-
+                    if (moveList[2] == 1)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(six));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 2 || moveList[4] == 3 || moveList[4] == 7 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(four));
+                                }
+                            }
+                            if (moveList[4] == 4)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 2 || moveList[6] == 9)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 2)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(one));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 3 || moveList[4] == 4 || moveList[4] == 6 || moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                            }
+                            if (moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 4 || moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 3)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(four));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 2 || moveList[4] == 7 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(six));
+                                }
+                            }
+                            if (moveList[4] == 6)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 2 || moveList[6] == 7)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
+                                    }
+                                    if (moveList[6] == 1)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 4)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(one));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 2 || moveList[4] == 3 || moveList[4] == 6 || moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                            }
+                            if (moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 2 || moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 6)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(three));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 2 || moveList[4] == 4 || moveList[4] == 9)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                            }
+                            if (moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(nine));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 2 || moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
+                                    }
+                                    if (moveList[6] == 1)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 7)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(nine));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 2 || moveList[4] == 3 || moveList[4] == 4 || moveList[4] == 6)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(one));
+                                }
+                            }
+                            if (moveList[4] == 1)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(four));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 2 || moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                    if (moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 9)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(seven));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 2 || moveList[4] == 4 || moveList[4] == 6)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                            }
+                            if (moveList[4] == 3)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(six));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 1 || moveList[6] == 2)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                    if (moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
             if (moveList[0] == 9)
@@ -1027,7 +2563,293 @@ public class GameCordinator : MonoBehaviour {
                 }
                 else
                 {
-
+                    if (moveList[2] == 1)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(two));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 3 || moveList[4] == 4 || moveList[4] == 6 || moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                            }
+                            if (moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 4 || moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 2)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(four));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 3 || moveList[4] == 7 || moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(six));
+                                }
+                            }
+                            if (moveList[4] == 6)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 1 || moveList[6] == 8)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                    if (moveList[6] == 7)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 3)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(six));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 2 || moveList[4] == 7 || moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(four));
+                                }
+                            }
+                            if (moveList[4] == 4)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 1 || moveList[6] == 7)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(eight));
+                                        }
+                                    }
+                                    if (moveList[6] == 8)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(seven));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 4)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(two));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 3 || moveList[4] == 6 || moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                            }
+                            if (moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 1 || moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                    if (moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 6)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(three));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 2 || moveList[4] == 4 || moveList[4] == 8)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(seven));
+                                }
+                            }
+                            if (moveList[4] == 7)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(eight));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 1 || moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(two));
+                                        }
+                                    }
+                                    if (moveList[6] == 2)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 7)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(eight));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 3 || moveList[4] == 4 || moveList[4] == 6)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(two));
+                                }
+                            }
+                            if (moveList[4] == 2)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(four));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 1 || moveList[6] == 3)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(six));
+                                        }
+                                    }
+                                    if (moveList[6] == 6)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(three));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (moveList[2] == 8)
+                    {
+                        if (moveCount == 3)
+                        {
+                            StartCoroutine(AISendMessage(seven));
+                        }
+                        else
+                        {
+                            if (moveList[4] == 1 || moveList[4] == 2 || moveList[4] == 4 || moveList[4] == 6)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(three));
+                                }
+                            }
+                            if (moveList[4] == 3)
+                            {
+                                if (moveCount == 5)
+                                {
+                                    StartCoroutine(AISendMessage(six));
+                                }
+                                else
+                                {
+                                    if (moveList[6] == 1 || moveList[6] == 2)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(four));
+                                        }
+                                    }
+                                    if (moveList[6] == 4)
+                                    {
+                                        if (moveCount == 7)
+                                        {
+                                            StartCoroutine(AISendMessage(one));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1313,7 +3135,9 @@ public class GameCordinator : MonoBehaviour {
     IEnumerator AISendMessage(GameObject cell)
     {
         aiMoving = true;
-        yield return new WaitForSeconds(0.5f);
+        float aiThinkingMinTime = 0.1f;
+        float aiThinkingMaxTime = 1.0f;
+        yield return new WaitForSeconds(Random.Range(aiThinkingMinTime, aiThinkingMaxTime));
         cell.SendMessage("MarkCell");
         aiMoving = false;
     }
