@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class GameCoordinator : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+    public int cardsX = 6;
+    public int cardsY = 4;
+    public int cardTypes = 4;
+    public int[,] board;
+
+    void Start () {
+        BuildGameBoard();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    private void BuildGameBoard()
+    {
+        int topCard = 0;
+        for (int i = 0; i < cardsX * cardsY; i++)
+        {
+
+            if (topCard >= cardTypes)
+            {
+                topCard = 0;
+            }
+        }
+    }
 }

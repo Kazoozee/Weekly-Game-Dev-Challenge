@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class CardScript : MonoBehaviour {
 
-
     // Vars for card mouseover behavoir
     private float zoomScale = 1.05f;
-    private float danceAngle = 10.0f;
-    private float danceSpeed = 0.75f;
+    private float danceAngle = 5.0f;
+    private float danceSpeed = 0.5f;
     private bool dancing = false;
     private bool danceReversed = false;
     private bool danceCycling = false;
