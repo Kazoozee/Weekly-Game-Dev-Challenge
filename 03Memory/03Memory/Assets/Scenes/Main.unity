@@ -140,6 +140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d6b35510f20172479e4957fd852cc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardsX: 6
+  cardsY: 4
+  cardTypes: 4
 --- !u!4 &122862253
 Transform:
   m_ObjectHideFlags: 0
@@ -259,6 +262,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b09a6ec0a3789624e80d033438862090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardIndex: 0
+  back: {fileID: 21300000, guid: aa7d6ff5051005245abb2d4c53be2dee, type: 3}
+  zero: {fileID: 21300000, guid: 26123cb872b904f40b0eb5e9f683be02, type: 3}
+  one: {fileID: 21300000, guid: 0924e4283f803574696cdead6bc1efb3, type: 3}
+  two: {fileID: 21300000, guid: bd6ce01c916290641bbe9f5d7c71e01c, type: 3}
+  three: {fileID: 21300000, guid: 29fc0fa3b66b4664aaaa9f3cf6219463, type: 3}
+  cardSprite: {fileID: 0}
+  flipped: 0
 --- !u!61 &2039797041
 BoxCollider2D:
   m_ObjectHideFlags: 0
