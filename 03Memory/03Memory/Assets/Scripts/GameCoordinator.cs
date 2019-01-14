@@ -1,9 +1,8 @@
 ﻿/*
  * Features:
  *      
- *  Build array from cards in list
+ *  Animate movement of card position
  *  
- *  run coroutine to instantiate each card with a small delay between each
  */
 
 using System.Collections;
@@ -13,8 +12,10 @@ using UnityEngine;
 
 public class GameCoordinator : MonoBehaviour {
 
+    public GameObject cardPreFab;
     public int cardsX = 6;
     public int cardsY = 4;
+    private int tempCardCount;
     private float dealDelay = 0.5f;
     private int cardCount;
     public int cardTypes = 4;
@@ -24,6 +25,7 @@ public class GameCoordinator : MonoBehaviour {
     public int[,] board;
 
     void Start () {
+        board = new int[cardsX, cardsY];
         cardCount = cardsX * cardsY;
         cardsPerType = cardCount / cardTypes;
         Shuffle();
@@ -31,6 +33,7 @@ public class GameCoordinator : MonoBehaviour {
 
     private void Shuffle()
     {
+        tempCardCount = 0;
         // Build List of cards and shuffle it
         for (int i = 0; i < cardTypes; i++)
         {
@@ -40,17 +43,30 @@ public class GameCoordinator : MonoBehaviour {
             }
         }
         shuffledList = cards.OrderBy(x => Random.value).ToList();
+        for (int k = 0; k < cardsX; k++)
+        {
+            for (int l = 0; l < cardsY; l++)
+            {
+                board[k, l] = shuffledList[tempCardCount];
+                tempCardCount++;
+            }
+        }
         StartCoroutine(DealCard());
-        
     }
 
     IEnumerator DealCard()
     {
-       
-        for (int i = 0; i < shuffledList.Count; i++)
+        for (int i = 0; i < cardsX; i++)
         {
-            yield return new WaitForSeconds(dealDelay);
-            Debug.Log(shuffledList[i]);
+            for (int j = 0; j < cardsY; j++)
+            {
+                yield return new WaitForSeconds(dealDelay);
+                GameObject go = (GameObject)Instantiate(cardPreFab, transform.position, transform.rotation);
+                CardScript script = go.GetComponent<CardScript>();
+                script.cardID = board[i, j];
+                script.positionX = i;
+                script.positionY = j;
+            }
         }
     }
 }

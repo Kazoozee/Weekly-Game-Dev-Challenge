@@ -16,7 +16,6 @@ public class CardScript : MonoBehaviour {
 
     //Vars for card flip behavoir
     private float flipSpeed = 1.5f;
-    public int cardIndex = 0;
     public Sprite back;
     public Sprite zero;
     public Sprite one;
@@ -26,6 +25,12 @@ public class CardScript : MonoBehaviour {
     public bool flipped = false;
     private bool flipping = false;
     private bool spriteChanged = false;
+
+    public int cardID;
+    public int positionX;
+    public int positionY;
+    private float spacing = 3;
+    private bool positioned = false;
 
     private void Start()
     {
@@ -65,7 +70,7 @@ public class CardScript : MonoBehaviour {
             transform.Rotate(new Vector3(0, flipSpeed, 0));
             if (transform.eulerAngles.y >= 90 && spriteChanged == false)
             {
-                switch(cardIndex)
+                switch(cardID)
                 {
                     case 0:
                         cardSprite.sprite = zero;
@@ -84,7 +89,7 @@ public class CardScript : MonoBehaviour {
                         spriteChanged = true;
                         break;
                     default:
-                        Debug.Log("cardIndex is " + cardIndex + " this may be out of range.");
+                        Debug.Log("cardID is " + cardID + " this may be out of range.");
                         break;
                 }
             }
@@ -94,6 +99,12 @@ public class CardScript : MonoBehaviour {
                 flipping = false;
             }
         }
+        // Define card positioning movement
+        if (positioned == false)
+        {
+            transform.position = new Vector3(positionX * spacing, positionY * spacing, 0);
+        }
+
     }
 
     private void OnMouseOver()
