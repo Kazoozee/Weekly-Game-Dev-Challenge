@@ -5,19 +5,26 @@ using UnityEngine;
 public class RocketController : MonoBehaviour {
 
     public GameObject player;
+    public GameObject explosion;
+    private SpriteRenderer spriteRenderer;
+    private Rigidbody2D rb;
     private float angle;
     private float firedAngleX;
     private float firedAngleY;
-    private float radius = 0.45f;
-    private float fireSpeed = 0.1f;
+    private float radius = 0.1f;
+    public float fireSpeed = 100f;
+    private float firedAngle;
     private float fuse = 3.0f;
     private float fireTime;
     private float loadTime;
     private bool fired = false;
+    private bool positioned = false;
     private Vector3 mousePos;
 
 	void Start () {
         player = GameObject.Find("Player");
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
         loadTime = Time.timeSinceLevelLoad;
 	}
 
@@ -25,8 +32,7 @@ public class RocketController : MonoBehaviour {
     {
         if (Input.GetButtonDown("Fire1") && fired == false)
         {
-            firedAngleX = mousePos.x;
-            firedAngleY = mousePos.y;
+            firedAngle = angle;
             fired = true;
             fireTime = Time.time;
         }
@@ -34,6 +40,7 @@ public class RocketController : MonoBehaviour {
         {
             Explode();
         }
+
     }
 
     void FixedUpdate () {
@@ -49,23 +56,31 @@ public class RocketController : MonoBehaviour {
             float xPos = Mathf.Cos(Mathf.Deg2Rad * angle) * radius;
             float yPos = Mathf.Sin(Mathf.Deg2Rad * angle) * radius;
             transform.localPosition = new Vector3(player.transform.position.x + xPos, player.transform.position.y + yPos, 0);
+            if (positioned == false)
+            {
+                spriteRenderer.enabled = true;
+                positioned = true;
+            }
         }
         if (fired == true)
         {
-            transform.position = transform.position + new Vector3(firedAngleX * fireSpeed, firedAngleY * fireSpeed, 0.0f);
+            Vector3 dir = Quaternion.AngleAxis(firedAngle, Vector3.forward) * Vector3.right;
+            rb.AddForce(dir * fireSpeed);
         }
 	}
 
-    private void Explode()
-    {
-        Destroy(gameObject);
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "environment" || collision.gameObject.tag == "ground" && fired == true)
+        if (fired == true && collision.gameObject.tag != "Player")
         {
             Explode();
         }
+    }
+
+    private void Explode()
+    {
+        player.SendMessage("Explosion", transform.position);
+        Instantiate(explosion, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

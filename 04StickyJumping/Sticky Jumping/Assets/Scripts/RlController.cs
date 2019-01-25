@@ -7,10 +7,11 @@ public class RlController : MonoBehaviour
 
     public GameObject player;
     public GameObject rocket;
+    public GameObject rocketReloadIcon;
     private float angle;
     private float radius = 0.1f;
     private float fireTime = 0.0f;
-    private float coolDown = 1.0f;
+    private float coolDown = 0.5f;
     public bool loaded = false;
     private Vector3 mousePos;
 
@@ -36,6 +37,7 @@ public class RlController : MonoBehaviour
         }
         if (loaded == false && Time.time >= fireTime + coolDown)
         {
+            rocketReloadIcon.SendMessage("Reload");
             Instantiate(rocket, Vector3.zero, Quaternion.identity);
             loaded = true;
         }
